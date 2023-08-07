@@ -6,7 +6,7 @@ PATH_PROJ="~/mk_serv"
 # cd to path
 #cd $PATH_PROJ
 
-
+killall ngrok
 
 #run ngrok service
 screen -d -m  ngrok tcp $SERVER:22 

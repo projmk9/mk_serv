@@ -12,13 +12,13 @@ rm ngrok_json.txt
 #run ngrok service
 screen -d -m ngrok tcp $SERVER:22 
 
-#sleep 12
+sleep 6
 
 #run curl service > ngrok_json.txt
 curl 127.0.0.1:4040/api/tunnels -o ngrok_json.txt  
 
 
-#sleep 12
+sleep 6
 
 
 #cd $PATH_PROJ
@@ -31,4 +31,4 @@ git commit -m "update"
 git push origin main 
 
 
-#wait
+wait

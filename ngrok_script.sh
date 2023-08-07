@@ -10,7 +10,10 @@ killall ngrok
 #rm ngrok_json.txt
 
 #run ngrok service
-screen -d -m ngrok tcp $SERVER:22 
+#screen -d -m ngrok tcp $SERVER:22 
+
+ngrok tcp $SERVER:22 
+
 
 sleep 6
 

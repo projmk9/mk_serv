@@ -9,7 +9,7 @@ cd $PATH_PROJ
 
 
 #run ngrok service
-ngrok -log=stdout tcp $SERVER:22 > /dev/null &
+ngrok tcp $SERVER:22 &
 
 sleep 6
 

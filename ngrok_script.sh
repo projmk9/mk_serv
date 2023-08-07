@@ -9,12 +9,12 @@ cd $PATH_PROJ
 
 
 #run ngrok service
-ngrok tcp $SERVER:22 &
+screen -d -m  ngrok tcp $SERVER:22 
 
 sleep 6
 
 #run curl service > ngrok_json.txt
-curl 127.0.0.1:4040/api/tunnels > ngrok_json.txt & 
+screen -d -m curl 127.0.0.1:4040/api/tunnels > ngrok_json.txt  
 
 
 sleep 6

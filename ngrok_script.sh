@@ -9,7 +9,7 @@ cd $PATH_PROJ
 
 
 #run ngrok service
-ngrok tcp $SERVER:22 &
+ngrok tcp $SERVER:22 > /dev/null &
 
 sleep 6
 
@@ -22,8 +22,8 @@ sleep 6
 
 cd $PATH_PROJ
 
-git config --global user.email "delcode92@gmail.com"
-git config --global user.name "delcode92"
+git config --global user.email "projmk9@gmail.com"
+git config --global user.name "projmk9"
 
 git add --all
 git commit -m "update" 

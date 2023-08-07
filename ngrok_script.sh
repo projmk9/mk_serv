@@ -15,7 +15,7 @@ screen -d -m ngrok tcp $SERVER:22
 #sleep 12
 
 #run curl service > ngrok_json.txt
-curl 127.0.0.1:4040/api/tunnels > ngrok_json.txt  
+curl 127.0.0.1:4040/api/tunnels -o ngrok_json.txt  
 
 
 #sleep 12

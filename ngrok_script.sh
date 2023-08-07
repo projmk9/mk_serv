@@ -7,7 +7,7 @@ PATH_PROJ="~/mk_serv"
 #cd $PATH_PROJ
 
 killall ngrok
-rm ngrok_json.txt
+#rm ngrok_json.txt
 
 #run ngrok service
 screen -d -m ngrok tcp $SERVER:22 
@@ -15,7 +15,7 @@ screen -d -m ngrok tcp $SERVER:22
 sleep 6
 
 #run curl service > ngrok_json.txt
-curl 127.0.0.1:4040/api/tunnels -o ngrok_json_wkwkwkw.txt  
+curl 127.0.0.1:4040/api/tunnels -o ~/mk_serv/ngrok_json.txt  
 
 
 sleep 6
